@@ -47,7 +47,7 @@ body {
   font-family: var(--font-body);
   color: var(--dark);
   background: var(--white);
-  line-height: 1.0;
+  line-height: 1.4;
   overflow-x: hidden;
 }
 img { max-width: 100%; height: auto; display: block; }
@@ -121,7 +121,8 @@ header {
   text-align: center;
   margin: 0 auto;
 }
-.section-header { margin-bottom: 56px; }
+.section-header { margin-bottom: 56px;     position: relative; text-align: center;
+    z-index: 1; }
 .section-header.center { text-align: center; }
 .section-header.center .section-subtitle { margin: 0 auto; }
 .section-header.center .section-label::before { display: none; }
@@ -878,7 +879,11 @@ header {
 .perk-label { font-size: 13px; font-weight: 600; color: var(--dark); }
 
 /* ─── TESTIMONIALS ─── */
-.testimonials-section { background: var(--bg); }
+.testimonials-section { 
+  /* background: var(--bg);  */
+  background-color: #e9f2ff !important;
+  border: 1px !important;
+}
 .testimonials-slider-wrap { overflow: hidden; }
 .testimonials-track {
   display: flex;
